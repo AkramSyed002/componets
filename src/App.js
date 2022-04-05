@@ -1,15 +1,10 @@
-import React, { useState } from 'react'
-import InputField from './components/InputField'
+import React from 'react'
+import RenderComponents from './pages/RenderComponents'
 
 const App = () => {
-  const [input, setInput] = useState('');
-
-  const handleInputChange=(e)=>{
-    setInput(e.target.value);
-  }
   return (
-  
-    <InputField placeholder={'placeholder'} type={'text'} onChange={handleInputChange} value={input}/>
+    <RenderComponents />
   )
 }
+
 export default App
